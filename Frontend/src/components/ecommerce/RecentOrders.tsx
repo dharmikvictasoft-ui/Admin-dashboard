@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import Button from "../ui/button/Button";
 
 const orders = [
@@ -60,8 +61,16 @@ const orders = [
 ];
 
 function CountryBadge({ code, name }: { code: string; name: string }) {
+  useEffect(() => {
+  const t = setTimeout(() => {
+    window.dispatchEvent(new Event("resize"));
+  }, 80);
+
+  return () => clearTimeout(t);
+}, []);
+
   return (
-    <div className="flex items-center gap-2 lg:w-full">
+    <div className="flex items-center gap-2 lg:w-full ">
       <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 text-xs font-semibold text-gray-600 dark:bg-gray-800 dark:text-gray-300">
         {code}
       </span>

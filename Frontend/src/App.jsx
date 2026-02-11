@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import SignIn from "./pages/AuthPages/SignIn";
 import SignUp from "./pages/AuthPages/SignUp";
 import Home from "./pages/Dashboard/Home";
+import UserProfiles from "./pages/UserProfiles";
 import './App.css'
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
       <Routes>
         <Route element={<AppLayout />} >
           <Route index path="/" element={<Home />} />
+
+          <Route path="/profile" element={<UserProfiles />} />
         </ Route>
 
         <Route path="/signin" element={<SignIn />} />

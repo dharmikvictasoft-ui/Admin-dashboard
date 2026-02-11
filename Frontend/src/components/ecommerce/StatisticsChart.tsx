@@ -9,7 +9,6 @@ import { CalenderIcon } from "../../icons";
 export default function StatisticsChart() {
   const datePickerRef = useRef<HTMLInputElement>(null);
 
-  /* ✅ CALENDAR FIX (already correct) */
   useEffect(() => {
     if (!datePickerRef.current) return;
 
@@ -36,7 +35,6 @@ export default function StatisticsChart() {
     return () => fp.destroy();
   }, []);
 
-  /* ✅ APEXCHARTS FIX — THIS IS THE KEY */
   useEffect(() => {
     const t = setTimeout(() => {
       window.dispatchEvent(new Event("resize"));
@@ -45,7 +43,6 @@ export default function StatisticsChart() {
     return () => clearTimeout(t);
   }, []);
 
-  /* 🔒 CHART OPTIONS — UNTOUCHED */
   const options: ApexOptions = {
     legend: { show: false },
     colors: ["#465FFF", "#9CB9FF"],
