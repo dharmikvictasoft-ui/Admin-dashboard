@@ -54,6 +54,7 @@ import ChatIcon from "./chat.svg?react";
 import MoreDotIcon from "./moredot.svg?react";
 import AlertHexaIcon from "./alert-hexa.svg?react";
 import ErrorHexaIcon from "./info-hexa.svg?react";
+import CaloriesIcon from "./calories.svg?react";
 
 
 export {
@@ -113,4 +114,5 @@ export {
   ChatIcon,
   AngleLeftIcon,
   AngleRightIcon,
+  CaloriesIcon,
 };

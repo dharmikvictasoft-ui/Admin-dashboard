@@ -3,9 +3,11 @@ import {
   ArrowUpIcon,
   BoxIconLine,
   GroupIcon,
+  CaloriesIcon,
 } from "../../icons";
 import Badge from "../ui/badge/Badge";
 import { IoFootstepsOutline } from "react-icons/io5";
+import { RiFireLine } from "react-icons/ri";
 import { LuUserCheck } from "react-icons/lu";
 
 export default function EcommerceMetrics() {
@@ -23,7 +25,7 @@ export default function EcommerceMetrics() {
               Customers
             </span>
             <h4 className="mt-2 font-bold text-gray-800 text-title-sm dark:text-white/90">
-              3,782
+              15,000
             </h4>
           </div>
           <Badge color="success">
@@ -68,7 +70,7 @@ export default function EcommerceMetrics() {
               Total Steps
             </span>
             <h4 className="mt-2 font-bold text-gray-800 text-title-sm dark:text-white/90">
-              5,359
+              45,000
             </h4>
           </div>
 
@@ -83,7 +85,7 @@ export default function EcommerceMetrics() {
       {/* <!-- Metric Item Start --> */}
       <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-white/[0.03] md:p-6">
         <div className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-xl dark:bg-gray-800">
-          <BoxIconLine className="text-gray-800 size-6 dark:text-white/90" />
+          <RiFireLine className="text-gray-800 size-6 dark:text-white/90" />
         </div>
         <div className="flex items-end justify-between mt-5">
           <div>
@@ -91,12 +93,12 @@ export default function EcommerceMetrics() {
               Total Calories Burned 
             </span>
             <h4 className="mt-2 font-bold text-gray-800 text-title-sm dark:text-white/90">
-              5,359
+              12,000 <span className="font-normal text-gray-800 text-[14px]">kCal</span>
             </h4>
           </div>
 
-          <Badge color="error">
-            <ArrowDownIcon />
+          <Badge color="success">
+            <ArrowUpIcon />
             9.05%
           </Badge>
         </div>
